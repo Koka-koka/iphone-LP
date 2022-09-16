@@ -39,6 +39,8 @@ ul {
 
 .menu {
     display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .menu-item {
@@ -47,4 +49,41 @@ ul {
 
 .menu-item:last-child {
     padding-right: 0;
+}
+
+.phone {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: right;
+}
+
+.headline {
+    background-color: #F5F5F7;
+    text-align: center;
+    padding: 70px 0 40px;
+}
+
+.title {
+    text-transform: uppercase;
+    margin: 0 0 40px;
+    color: #490E84;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+}
+
+.headline-img {
+    margin-bottom: 25px;
+}
+
+.headline-btn {
+    display: inline-block;
+    background-color: #490E84;
+    padding: 20px 117px;
+    border-radius: 30px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
 }
