@@ -87,3 +87,38 @@ ul {
     line-height: 29px;
     color: #FFFFFF;
 }
+
+.upgrade {
+    padding: 90px 0 150px;
+}
+
+.upgrade-title {
+    color: #717171;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 50px;
+}
+
+.upgrade-info {
+    display: flex;
+    align-items: center;
+}
+
+.upgrade-text {
+    max-width: 560px;
+}
+.upgrade-text p {
+    margin: 0 0 30px;
+}
+
+.upgrade-text b {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.upgrade-img {
+    margin-left: 191px;
+}
