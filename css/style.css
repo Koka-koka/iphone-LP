@@ -92,7 +92,8 @@ ul {
     padding: 90px 0 150px;
 }
 
-.upgrade-title {
+.upgrade-title,
+.color-title {
     color: #717171;
     font-size: 32px;
     font-weight: 700;
@@ -121,4 +122,33 @@ ul {
 
 .upgrade-img {
     margin-left: 191px;
+}
+
+.color {
+    padding-bottom: 150px;
+}
+
+.color-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.color-item {
+    margin-right: 80px;
+}
+
+.color-item:last-child {
+    margin-right: 0;
+}
+
+.color-item img {
+    margin-bottom: 20px;
+}
+
+.color-item h3 {
+    color: #0A0A0A;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
 }
