@@ -145,19 +145,16 @@ ul {
     display: flex;
     justify-content: center;
     text-align: center;
+    gap: 20px 80px;
 }
 
 .color-item {
-    margin-right: 80px;
+    width: 25%;
     transition: all 0.2s linear;
 }
 
 .color-item:hover {
     transform: scale(1.07);
-}
-
-.color-item:last-child {
-    margin-right: 0;
 }
 
 .color-item img {
@@ -263,4 +260,156 @@ ul {
 footer .phone {
     font-size: 24px;
     line-height: 29px;
+}
+
+/* Responsive */
+
+@media (max-width: 1201px) {
+
+    /* Upgrade */
+    .upgrade-info {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .upgrade-title {
+        margin: 0 0 10px;
+    }
+
+    .upgrade-img {
+        margin: 0;
+    }
+
+    /* Color */
+    .color-list {
+        gap: 0 50px;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    /* Header */
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Headline */
+    .title {
+        font-size: 52px;
+        line-height: 45px;
+    }
+
+    .headline-btn {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 18px 92px;
+    }
+
+    /* Upgrade */
+    .upgrade {
+        padding: 70px 0 100px;
+    }
+
+    /* Color */
+    .color-list {
+        flex-wrap: wrap;
+        gap: 25px 0;
+    }
+
+    .color-item {
+        width: 50%;
+    }
+
+    /* Form */
+
+    .contacts img {
+        display: none;
+    }
+
+    .contacts-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+
+    /* Headline */
+    .headline {
+        padding: 50px 0 30px;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 42px;
+        margin-bottom: 30px;
+    }
+
+    .headline-btn {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 16px 70px;
+    }
+
+    /* Upgrade */
+    .upgrade {
+        padding: 50px 0 80px;
+    }
+
+    .upgrade-title {
+        font-size: 27px;
+        line-height: 30px;
+    }
+
+    .upgrade-text p {
+        margin-bottom: 20px;
+    }
+
+    .upgrade-text b {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    /* Color */
+    .color {
+        padding-bottom: 80px;
+    }
+
+    .color-item {
+        width: 100%;
+    }
+
+    /* Form */
+
+    .contacts-form {
+        padding: 60px 25px;
+    }
+
+    /* Footer */
+
+    .footer-inner {
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 0;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 381px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-item {
+        padding-right: 0;
+    }
+
+    .phone {
+        text-align: center;
+    }
 }
