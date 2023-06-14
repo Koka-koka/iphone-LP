@@ -17,18 +17,20 @@ ul {
     list-style: none;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+
 .header {
     background-color: #0A0A0A;
     font-size: 24px;
     line-height: 29px;
     padding: 30.5px 0;
     color: #717171;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .nav {
@@ -86,7 +88,15 @@ ul {
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
+    transition: all 0.2s linear;
+    cursor: pointer;
 }
+
+.headline-btn:hover {
+    background-color: #5a1f95;
+}
+
+/* Upgrade */
 
 .upgrade {
     padding: 90px 0 150px;
@@ -111,6 +121,7 @@ ul {
 .upgrade-text {
     max-width: 560px;
 }
+
 .upgrade-text p {
     margin: 0 0 30px;
 }
@@ -124,6 +135,8 @@ ul {
     margin-left: 191px;
 }
 
+/* Color */
+
 .color {
     padding-bottom: 150px;
 }
@@ -136,6 +149,11 @@ ul {
 
 .color-item {
     margin-right: 80px;
+    transition: all 0.2s linear;
+}
+
+.color-item:hover {
+    transform: scale(1.07);
 }
 
 .color-item:last-child {
@@ -151,4 +169,98 @@ ul {
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
+}
+
+
+/* Conntacts */
+
+.contacts {
+    text-align: center;
+}
+
+.contacts-inner {
+    display: flex;
+}
+
+.contacts-form {
+    width: 50%;
+    padding: 135px 95px;
+    background-color: #574B63;
+}
+
+.contacts-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin-bottom: 72px;
+    text-transform: uppercase;
+}
+
+.contacts-input {
+    display: block;
+    padding: 10px 3px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #F5F5F5;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.contacts-input::placeholder,
+.contacts p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.contacts p {
+    margin-bottom: 30px;
+}
+
+.contacts-btn {
+    border: none;
+    background-color: #FFFFFF;
+    padding: 16px 80px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    color: #490E84;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.contacts img {
+    width: 50%;
+}
+
+/* footer */
+
+.footer {
+    background-color: #0A0A0A;
+    color: #717171;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.policy {
+    flex-grow: 1;
+    flex-basis: 0;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+footer .phone {
+    font-size: 24px;
+    line-height: 29px;
 }
