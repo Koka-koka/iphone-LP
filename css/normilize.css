@@ -149,6 +149,7 @@
   img {
     max-width: 100%;
     border-style: none;
+    object-fit: cover;
   }
   
   /* Forms
